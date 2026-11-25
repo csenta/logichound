@@ -1,5 +1,7 @@
 # LogicHound: Autonomous Business-Logic & Authorization Vulnerability Auditor
 
+> **Status:** prototype. A personal security-research project, not a production product. Expect rough edges; issues and pull requests are welcome.
+
 Automated security scanner for detecting **Broken Object Level Authorization (BOLA/IDOR)**, **Broken Function Level Authorization (BFLA)**, and **Privilege Escalation** flaws across APIs and modern web applications.
 
 ---
@@ -52,3 +54,7 @@ python3 -m logichound.cli \
 - **Reproduction**:
 curl -X GET 'https://api.example.com/v1/users/usr_1001/billing' -H 'Authorization: <Session_B_TOKEN>'
 ```
+
+## License
+
+MIT. See [LICENSE](LICENSE).
